@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+/* font-family: 'Black Ops One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+/* font-family: 'Tilt Prism', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+/* font-family: 'Handjet', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@600&display=swap');
+/* font-family: 'Ysabeau Infant', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400&display=swap');
+/* font-family: 'Changa', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #010536;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    background-color: #010536;
+    border: 5px solid #C9EFC7;
+}
+
+.navBar .logoContainer {
+    padding: 0 5px;
+    margin: 0 2px;
+}
+
+.logoContainer img {
+    width: 40px;
+    height: auto;
+    padding: 0 3px;
+    margin: 0 1px;
+}
+
+.navBar .headingContainer {
+    padding: 0 5px;
+    margin: 0 2px;
+}
+
+.headingContainer h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFF00;
+    padding: 1px 3px;
+    margin: 1px;
+}
+
+/* Main Content */
+
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #010536;
+}
+
+.mainContainer .leftContainer {
+    width: 20%;
+    height: 100%;
+    border: 5px solid #C9EFC7;
+    border-left: 10px solid #C9EFC7;
+    background-color: #010536;
+    overflow-y: scroll;
+}
+
+.leftContainer .topContainer {
+    padding: 5px;
+    border-bottom: 2px solid #C9EFC7;
+}
+
+.leftContainer .topContainer input {
+    font-family: 'Handjet', cursive;
+    font-size: 1.3em;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #8ABCD7;
+    background-color: transparent;
+    outline: none;
+    color: #8ABCD7;
+}
+
+.leftContainer .box {
+    background-color: #fff;
+    margin: 15px;
+    border: 1.789px solid #FFFF00;
+    cursor: pointer;
+}
+
+.leftContainer .box .box_heading {
+    padding: 1px;
+    margin: 1px;
+}
+
+.leftContainer .box .box_heading h2 {
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-family: 'Tilt Prism', cursive;
+    color: #010536;
+}
+
+.leftContainer .box .box_description {
+    padding: 1px;
+    margin: 1px;
+}
+
+.leftContainer .box .box_description h4 {
+    text-transform: lowercase;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    color: #01053693;
+}
+
+.mainContainer .midContainer {
+    width: 39%;
+    height: 100%;
+    border: 5px solid #C9EFC7;
+    background-color: #010536;
+}
+
+.midContainer .topContainer {
+    border-bottom: 2px solid #C9EFC7;
+    padding: 5px;
+}
+
+.midContainer .bottomContainer {
+    padding: 5px;
+    margin: 1px;
+    height: 92%;
+    width: 100%;
+    overflow: auto;
+}
+
+.midContainer .bottomContainer div {
+    padding: 1px;
+    color: #8ABCD7;
+    font-family: 'Changa', sans-serif;
+}
+
+.topContainer h2 {
+    font-family: 'Handjet', cursive;
+    text-transform: capitalize;
+    font-size: 1.389em;
+    padding: 5px;
+    color: #8ABCD7;
+}
+
+.mainContainer .rightContainer {
+    width: 41%;
+    height: 100%;
+    border: 5px solid #C9EFC7;
+    border-right: 10px solid #C9EFC7;
+    background-color: #010536;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightContainer .topContainer {
+    height: 50%;
+    width: 100%;
+    border-bottom: 1px solid #C9EFC7;
+}
+
+.rightContainer .bottomContainer {
+    height: 50%;
+    width: 100%;
+    border-top: 1px solid #C9EFC7;
+}
+
+.rightContainer .topContainer .toolWindow,
+.rightContainer .bottomContainer .toolWindow {
+    border-bottom: 2px solid #C9EFC7;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightContainer .topContainer .toolWindow .heading,
+.rightContainer .bottomContainer .toolWindow .heading {
+    padding: 2px;
+    margin: 1px;
+}
+
+.rightContainer .topContainer .toolWindow .heading p,
+.rightContainer .bottomContainer .toolWindow .heading p {
+    color: #8ABCD7;
+    font-size: 1.3789em;
+    font-family: 'Handjet', cursive;
+    text-transform: capitalize;
+}
+
+.rightContainer .topContainer .toolWindow .iconContainer,
+.rightContainer .bottomContainer .toolWindow .iconContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightContainer .topContainer .toolWindow .iconContainer p,
+.rightContainer .bottomContainer .toolWindow .iconContainer p {
+    color: #8ABCD7;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.rightContainer .topContainer .Container,
+.rightContainer .bottomContainer .Container {
+    display: flex;
+    align-items: center;
+}
+
+.rightContainer .topContainer .Container textarea,
+.rightContainer .bottomContainer .Container textarea {
+    background-color: #8ABCD7;
+    border: none;
+    min-width: 300px;
+    max-width: 560px;
+    min-height: 200px;
+    max-height: 310px;
+    outline: none;
+    padding: 5px;
+    font-family: sans-serif;
+    color: #000000;
+}
+
+.rightContainer .bottomContainer .outputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border: 5px solid #C9EFC7;
+    background-color: #010536;
+}
+
+.footer .footerContent {
+    padding: 1px 3px;
+    margin: 1px;
+}
+
+.footerContent h3 {
+    color: #FFFF00;
+    font-size: 1em;
+    font-family: 'Black Ops One', cursive;
+}

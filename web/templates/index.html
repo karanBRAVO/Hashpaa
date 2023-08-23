@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/assets/favicon.ico" type="image/x-icon">
+    <title>HashPaa - 1.A.A.A</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navBar">
+        <div class="logoContainer">
+            <img src="static/assets/logo.png" alt="Logo" draggable="false">
+        </div>
+        <div class="headingContainer">
+            <h1>HashPaa</h1>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <div class="mainContainer">
+        <div class="leftContainer">
+            <div class="topContainer">
+                <input type="search" name="searchAlgo" id="searchAlgo" autocomplete="off"
+                    placeholder="Search for algorithm">
+            </div>
+            {% for algo in available_algos %}
+            <div class="box" id={{algo}} onclick="getSelectedAlgo('{{algo}}')">
+                <div class="box_heading">
+                    <h2>{{algo}}</h2>
+                </div>
+                <div class="box_description">
+                    <h4>this is hashing algorithm</h4>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="midContainer">
+            <div class="topContainer">
+                <h2 id="midHeading"></h2>
+            </div>
+            <div class="bottomContainer">
+                <div id="algoInfo"></div>
+            </div>
+        </div>
+
+        <div class="rightContainer">
+            <div class="topContainer">
+                <div class="toolWindow">
+                    <div class="heading">
+                        <p>Input</p>
+                    </div>
+                    <div class="iconContainer">
+                        <p>&capbrcup;</p>
+                        <p>&circleddash;</p>
+                        <p>&bemptyv;</p>
+                    </div>
+                </div>
+                <div class="Container">
+                    <textarea name="userInput" id="userInput" cols="30" rows="10"
+                        placeholder="Text/Object">Hello World!</textarea>
+                </div>
+            </div>
+            <div class="bottomContainer">
+                <div class="toolWindow">
+                    <div class="heading">
+                        <p>Output</p>
+                    </div>
+                    <div class="iconContainer">
+                        <p>&capbrcup;</p>
+                        <p>&circleddash;</p>
+                        <p>&bemptyv;</p>
+                    </div>
+                </div>
+                <div class="Container">
+                    <textarea id="showHash" disabled="true" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footerContent">
+            <h3>&copy; Karan Yadav 2023-&infin;</h3>
+        </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
